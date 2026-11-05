@@ -3,10 +3,8 @@ const path = require('path')
 const Promise = require('bluebird')
 const Fixtures = require('../lib/fixtures')
 const systemTests = require('../lib/system-tests').default
-let sizeOf = require('image-size')
+const { imageSizeFromFile: sizeOf } = require('image-size/fromFile')
 const { fs } = require('@packages/server/lib/util/fs')
-
-sizeOf = Promise.promisify(sizeOf)
 
 const screenshotsPath = Fixtures.projectPath('screenshots')
 
