@@ -46,6 +46,7 @@
 - Upgraded bundled Node.js version from `24.15.0` to `24.22.1`. Addresses [#35124](https://github.com/cypress-io/cypress/issues/35124).
 - Upgraded bundled Chromium version from `146.0.7680.216` to `150.0.7871.250`. Addresses [#35124](https://github.com/cypress-io/cypress/issues/35124).
 - Upgraded `systeminformation` to `5.33.18` to address the [SNYK-JS-SYSTEMINFORMATION-21771271](https://security.snyk.io/vuln/SNYK-JS-SYSTEMINFORMATION-21771271) (CVE-2026-116576) vulnerability reported in security scans. Addresses [#35196](https://github.com/cypress-io/cypress/issues/35196).
+- Upgraded `@puppeteer/browsers` from `2.4.0` to `3.2.6` and `deepmerge-ts` from `7.1.0` to `8.0.2`, which `webdriver` uses, to address vulnerabilities reported in security scans. `@puppeteer/browsers` 3 removes `extract-zip`, `basic-ftp` and `ip-address` from the binary, which have no fixes in their current major versions, and `deepmerge-ts` 8 fixes a [stack exhaustion](https://github.com/advisories/GHSA-ggr8-5vv4-36mx) vulnerability (CVE-2026-40345). Addresses [#35273](https://github.com/cypress-io/cypress/issues/35273).
 
 ## 16.2.1
 
